@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hello Fresh" parallel="methods">
+	<listeners>
+		<listener
+			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+		<listener
+			class-name="com.hellofresh.listeners.ReportsListener" />
+	</listeners>
+	<test thread-count="5" name="Regression test run">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.hellofresh.test.PurchaseTest" />
+			<class name="com.hellofresh.test.SigninTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
