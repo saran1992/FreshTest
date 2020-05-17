@@ -21,6 +21,6 @@ jobs:
     - name: Build with Maven
       env:
         variable1: environment variable
-      run: echo $variable
+      run: echo this is an $variable1
       
       
