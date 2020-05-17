@@ -4,8 +4,9 @@
 name: Actions Exapmple with Maven
 
 on:
-  push:
-    branches: [ master ]
+  schedule: 
+    - cron:  0,0 21 * * *
+    
 
 jobs:
   build:
@@ -19,4 +20,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Saravanan Github Actions Test
-      run: mvn clean test -Dbrowser=chrome -Denvironment=production -Dsurefire.suiteXmlFiles=regression.xml
+      env: 
+        suiteName: "regression.xml"  
+      run: echo ${suiteName}
