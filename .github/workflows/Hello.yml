@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -19,5 +19,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn clean test -Dbrowser=chrome -Denvironment=production -Dsurefire.suiteXmlFiles=regression.xml
+      run: echo "Hello Line 1"
+      run: echo "Line 2"
+      
       
