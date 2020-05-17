@@ -19,6 +19,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven  
+    run: echo ${suiteName} 
     env:
       suiteName: "regression.xml"
-    run: echo ${suiteName} 
+    
