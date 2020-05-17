@@ -2,8 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Hello Fresh" parallel="methods">
 	<listeners>
-		<listener
-			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
 			<listener
 			class-name="com.hellofresh.listeners.ReportsListener" />
 	</listeners>
