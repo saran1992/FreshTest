@@ -105,7 +105,7 @@
 						<properties>
 							<property>
 								<name>usedefaultlisteners</name>
-								<value>false</value> <!-- disabling default listeners is optional -->
+								<value>false</value> 
 							</property>
 						</properties>
 						<source>1.8</source>

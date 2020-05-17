@@ -65,6 +65,7 @@ public class SigninTest extends BaseTest {
 		Assert.assertEquals(signin.getHeaderString(), dataTable.get("accountHeader"),"Verify account header");
 		Assert.assertTrue(signin.getAccountInfo().contains(dataTable.get("welcomeText")),"Verify welcome text");
 		Assert.assertTrue(getDriver().getCurrentUrl().contains(dataTable.get("urlController")),"Verify url controller");
+		//False failure to demonstrate screenshot on failed test step
 		Assert.assertTrue(false,"Failure to demonstrate screenshot in reports");
 	}
 
